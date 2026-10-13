@@ -1,6 +1,7 @@
-body { padding: 0; margin: 0 }
-#unity-container { position: absolute }
-#unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
+* { box-sizing: border-box }
+body { padding: 36px 20px 56px; margin: 0; background: #061e38; color: #e9fbff; font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif }
+#unity-container { position: relative; margin: 0 auto }
+#unity-container.unity-desktop { width: 960px }
 #unity-container.unity-mobile { position: fixed; width: 100%; height: 100% }
 #unity-canvas { background: #231F20 }
 .unity-mobile #unity-canvas { width: 100%; height: 100% }
@@ -14,3 +15,13 @@ body { padding: 0; margin: 0 }
 #unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
 #unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+#tutorial { width: 960px; margin: 34px auto 0; padding: 28px 32px 32px; border: 2px solid #38d5df; border-radius: 12px; background: linear-gradient(180deg, rgba(10,58,91,.96), rgba(4,31,56,.98)); box-shadow: 0 14px 40px rgba(0,0,0,.35) }
+.tutorial-heading { text-align: center; margin-bottom: 24px }
+.tutorial-heading span { color: #79f3f0; font-size: 12px; letter-spacing: .32em }
+.tutorial-heading h1 { margin: 6px 0 0; font-size: 30px; letter-spacing: .12em }
+.tutorial-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px }
+.tutorial-grid article { padding: 18px 20px; border: 1px solid rgba(95,226,232,.36); border-radius: 8px; background: rgba(4,27,49,.72) }
+.tutorial-grid h2 { margin: 0 0 10px; color: #70ece9; font-size: 18px }
+.tutorial-grid p { margin: 7px 0; color: #d4edf2; font-size: 15px; line-height: 1.65 }
+kbd { display: inline-block; min-width: 28px; padding: 2px 7px; border: 1px solid #60e4e7; border-bottom-width: 3px; border-radius: 5px; background: #113f5e; color: white; text-align: center; font: 700 13px Arial }
+@media (max-width: 1000px) { body { padding: 0 } #tutorial { display: none } }
